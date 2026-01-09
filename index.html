@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitsune FunZone 🦊 SAO Mode</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Mental Health Bar -->
+<div class="mh-container">
+  <div class="mh-bar">
+    <span class="mh-text">Error4001: NO Brain Funded</span>
+  </div>
+</div>
+
+<!-- Main UI -->
+<div class="sao-ui">
+  <div class="panel">
+    <h1>🦊 Kitsune FunZone</h1>
+    <p id="output">Press a button to start the simulation...</p>
+  </div>
+
+  <div class="controls">
+    <button onclick="randomJoke()">😂 Joke</button>
+    <button onclick="chaos()">🎲 Chaos</button>
+    <button onclick="fakeAI()">🤖 Fake AI</button>
+    <button onclick="addBrain()">🧠 Add Brain</button>
+    <button id="increaseMHBtn" disabled>💊 Increase Mental Health</button>
+  </div>
+</div>
+
+<!-- Loading Window -->
+<div id="loadingWindow" class="loading-window hidden">
+  <p class="loading-text">Finding Brain...</p>
+</div>
+
+<!-- Yui Dialogue -->
+<div id="yui-dialogue" class="yui-dialogue hidden">
+
+  <!-- Yui Avatar -->
+  <div class="yui-avatar">
+    <img src="yui.png" alt="Yui AI">
+  </div>
+  <div class="yui-box">
+    <p id="yui-text"></p>
+    <button id="yui-next">Next</button>
+  </div>
+</div>
+
+<!-- Quiz Container -->
+<div id="quiz-container" class="hidden">
+  <div class="quiz-box">
+    <p id="quiz-question"></p>
+    <div id="quiz-answers"></div>
+  </div>
+</div>
+
+<!-- Owner -->
+<div class="owner-signature">
+  Programmed by ALFA YUUKI
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
